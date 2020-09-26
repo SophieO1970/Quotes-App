@@ -23,6 +23,41 @@ export class QuoteComponent implements OnInit {
     this.quotes[index].downvote++;
   }
 
+  toggleDetails(index) {
+    this.quotes[index].showDetails = !this.quotes[index].showDetails;
+  }
+
+  delete(deleteThis: boolean, index: number) {
+    if (deleteThis) {
+      let confirmDelete = confirm(
+        'Are you sure you want to delete this quote?'
+      );
+      if (confirmDelete) {
+        this.quotes.splice(index, 1);
+      }
+    }
+  }
+
+  // highestUpVote() {
+  //   let highestUpVoteQuote = new Quote(0, '', '', '', new Date());
+  //   for (let i = 0; i < this.quotes.length; i++) {
+  //     if (this.quotes[i].upvote > highestUpVoteQuote.upvote) {
+  //       highestUpVoteQuote = this.quotes[i];
+  //     }
+  //   }
+  //   if (highestUpVoteQuote.upvote > 0) {
+  //     return highestUpVoteQuote;
+  //   } else {
+  //     return;
+  //   }
+  // }
+
+  // addNewQuote(newQuote: Quote) {
+  //   newQuote.id = this.quotes.length + 1;
+  //   this.quotes.push(newQuote);
+  // }
+
+
 
   constructor() { }
 
