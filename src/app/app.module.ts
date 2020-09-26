@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
+import { DateTransformPipe } from './date-transform.pipe';
+import { QuatationMarksPipe } from './quatation-marks.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteComponent,
     QuoteDetailComponent,
-    QuoteFormComponent
+    QuoteFormComponent,
+    DateTransformPipe,
+    QuatationMarksPipe
   ],
   imports: [
     BrowserModule,
