@@ -8,6 +8,7 @@ import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { DateTransformPipe } from './date-transform.pipe';
 import { QuatationMarksPipe } from './quatation-marks.pipe';
+import { QuotationMarkPipe } from './quotation-mark.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { QuatationMarksPipe } from './quatation-marks.pipe';
     QuoteDetailComponent,
     QuoteFormComponent,
     DateTransformPipe,
-    QuatationMarksPipe
+    QuatationMarksPipe,
+    QuotationMarkPipe
   ],
   imports: [
     BrowserModule,
