@@ -14,6 +14,15 @@ export class QuoteComponent implements OnInit {
     new Quote('With a heart so weak, maybe love was just never meant for me', 'Sophie Olonde'),
   ];
 
+  upVote(index) {
+    this.quotes[index].upvote = this.quotes[index].upvote + 1;
+  }
+
+  downVote(index) {
+    this.quotes[index].downvote++;
+  }
+
+
   constructor() { }
 
   ngOnInit(): void {
