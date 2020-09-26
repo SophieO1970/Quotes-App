@@ -8,11 +8,11 @@ import { Quote} from '../quote'
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
-    new Quote(1, 'The way to get started is to quit talking and begin doing', 'Elizabeth Michael'),
-    new Quote(2, 'The most beautiful things in the world cannot be touched. They must be felt with the heart', 'Helen Keller'),
-    new Quote(3,'Difficult roads often lead to beatiful destinations', 'George Hawk'),
-    new Quote(4,'With a heart so weak, maybe love was just never meant for me', 'Sophie Olonde'),
-    new Quote(1, 'You are only here for a short visit', 'Alehandro Mike')
+    new Quote(1, 'The way to get started is to quit talking and begin doing', 'Elizabeth Michael','kelly Brooks', new Date(2020, 6, 15)),
+    new Quote(2, 'The most beautiful things in the world cannot be touched. They must be felt with the heart', 'Helen Keller','Kevin Munene', new Date(2020, 7, 18)),
+    new Quote(3,'Difficult roads often lead to beatiful destinations', 'George Hawk', 'Peter Muturi', new Date(2020, 4, 20)),
+    new Quote(4,'With a heart so weak, maybe love was just never meant for me', 'Sophie Olonde', 'Staford Omwakwe', new Date(2020, 5, 13)),
+    new Quote(1, 'You are only here for a short visit', 'Alehandro Mike', 'Lawrence Karanja', new Date(2020, 8, 20))
   ];
 
   upVote(index) {
