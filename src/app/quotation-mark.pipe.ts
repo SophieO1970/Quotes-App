@@ -5,8 +5,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class QuotationMarkPipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
-  }
+ transform(value: any): string{
+   let quoteMark = '"';
+   return quoteMark + value + quoteMark;
+ }
 
 }

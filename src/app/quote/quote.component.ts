@@ -12,17 +12,16 @@ export class QuoteComponent implements OnInit {
     new Quote(2, 'The most beautiful things in the world cannot be touched. They must be felt with the heart', 'Helen Keller','Kevin Munene', new Date(2020, 7, 18)),
     new Quote(3,'Difficult roads often lead to beatiful destinations', 'George Hawk', 'Peter Muturi', new Date(2020, 4, 20)),
     new Quote(4,'With a heart so weak, maybe love was just never meant for me', 'Sophie Olonde', 'Staford Omwakwe', new Date(2020, 5, 13)),
-    new Quote(1, 'You are only here for a short visit', 'Alehandro Mike', 'Lawrence Karanja', new Date(2020, 8, 20))
+    new Quote(5, 'You are only here for a short visit', 'Alehandro Mike', 'Lawrence Karanja', new Date(2020, 8, 20))
   ];
 
-  upVote(index) {
-    this.quotes[index].upvote = this.quotes[index].upvote + 1;
+  addUpVote(index) {
+    this.quotes[index].upvote++;
   }
 
-  downVote(index) {
+  addDownVote(index) {
     this.quotes[index].downvote++;
   }
-
   toggleDetails(index) {
     this.quotes[index].showDetails = !this.quotes[index].showDetails;
   }

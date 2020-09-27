@@ -1,8 +1,12 @@
-/* .card-footer {
+.card-footer{
+  position: relative;
+  padding: 10px;
+}
+/* /* /* .card-footer {
     position: relative;
-  }
-  
-  .like {
+  } */
+   
+  /* .like {
     position: absolute;
     left: 10px;
     top: 0;
@@ -20,4 +24,4 @@
   .fa-thumbs-up{
     color:blue;
   }
-   */
+   */ 

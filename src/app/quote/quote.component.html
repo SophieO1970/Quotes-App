@@ -2,7 +2,7 @@
   <div class="row col-md-8">
     <div *ngFor="let quote of quotes; let i = index" class="col-md-4">
       <div class="card text-center">
-        <div class="card-header"></div>
+        <div class="card-header">Quote:{{quote.id}}</div>
         <div class="card-body">
           <h5 *ngIf="quote === highestUpVote()" class="card-title">
             <i class="fas fa-trophy"></i>
