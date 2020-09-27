@@ -11,7 +11,7 @@
             <strong> Quote: </strong>{{ quote.text | quotationMark }}
           </h5>
 
-          <button class="btn btn-info" (click)="toggleDetails(i)">
+          <button class="btn btn-success" (click)="toggleDetails(i)">
             Toggle Details
           </button>
           <app-quote-detail
@@ -21,9 +21,9 @@
           ></app-quote-detail>
         </div>
         <div class="card-footer text-muted">
-          <button class="btn btn-primary" (click)="addUpVote(i)">Upvote</button>
+          <button class="btn btn-warning" (click)="addUpVote(i)">Upvote</button>
           {{ quote.upvote }} <br /><br />
-          <button class="btn btn-danger" (click)="addDownVote(i)">
+          <button class="btn btn-primary" (click)="addDownVote(i)">
             Downvote
           </button>
           {{ quote.downvote }}

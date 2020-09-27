@@ -5,23 +5,6 @@
 /* /* /* .card-footer {
     position: relative;
   } */
-   
-  /* .like {
-    position: absolute;
-    left: 10px;
-    top: 0;
-  }
-  .dislike {
-    position: absolute;
-    left: 60px;
-    top: 0;
-  }
-  
-  .fa-thumbs-down{
-    color:black;
-  }
-  
-  .fa-thumbs-up{
-    color:blue;
-  }
-   */ 
+   .btn btn-info{
+     color: grey;
+   }
