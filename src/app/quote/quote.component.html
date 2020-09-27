@@ -4,8 +4,8 @@
       <div class="card text-center">
         <div class="card-header">Quote:{{quote.id}}</div>
         <div class="card-body">
-          <h5 *ngIf="quote === highestUpVote()" class="card-title">
-            <i class="fas fa-trophy"></i>
+          <h5 *ngIf="quote === highestUpVote()" appStrikethrough> highest upvote
+           
           </h5>
           <h5 class="card-title">
             <strong> Quote: </strong>{{ quote.text | quotationMark }}
